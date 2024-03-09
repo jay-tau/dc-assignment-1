@@ -1,0 +1,232 @@
+services:
+  load-balancer:
+    image: load-balancer
+    volumes:
+      - ../data:/code/data
+    environment:
+      - NUM_CHUNKS=32
+    depends_on:
+      - searcher0
+      - searcher1
+      - searcher2
+      - searcher3
+      - searcher4
+      - searcher5
+      - searcher6
+      - searcher7
+      - searcher8
+      - searcher9
+      - searcher10
+      - searcher11
+      - searcher12
+      - searcher13
+      - searcher14
+      - searcher15
+      - searcher16
+      - searcher17
+      - searcher18
+      - searcher19
+      - searcher20
+      - searcher21
+      - searcher22
+      - searcher23
+      - searcher24
+      - searcher25
+      - searcher26
+      - searcher27
+      - searcher28
+      - searcher29
+      - searcher30
+      - searcher31
+  searcher0:
+    image: searcher-worker
+    ports:
+      - 8000:80
+    volumes:
+      - ../data:/code/data
+  searcher1:
+    image: searcher-worker
+    ports:
+      - 8001:80
+    volumes:
+      - ../data:/code/data
+  searcher2:
+    image: searcher-worker
+    ports:
+      - 8002:80
+    volumes:
+      - ../data:/code/data
+  searcher3:
+    image: searcher-worker
+    ports:
+      - 8003:80
+    volumes:
+      - ../data:/code/data
+  searcher4:
+    image: searcher-worker
+    ports:
+      - 8004:80
+    volumes:
+      - ../data:/code/data
+  searcher5:
+    image: searcher-worker
+    ports:
+      - 8005:80
+    volumes:
+      - ../data:/code/data
+  searcher6:
+    image: searcher-worker
+    ports:
+      - 8006:80
+    volumes:
+      - ../data:/code/data
+  searcher7:
+    image: searcher-worker
+    ports:
+      - 8007:80
+    volumes:
+      - ../data:/code/data
+  searcher8:
+    image: searcher-worker
+    ports:
+      - 8008:80
+    volumes:
+      - ../data:/code/data
+  searcher9:
+    image: searcher-worker
+    ports:
+      - 8009:80
+    volumes:
+      - ../data:/code/data
+  searcher10:
+    image: searcher-worker
+    ports:
+      - 8010:80
+    volumes:
+      - ../data:/code/data
+  searcher11:
+    image: searcher-worker
+    ports:
+      - 8011:80
+    volumes:
+      - ../data:/code/data
+  searcher12:
+    image: searcher-worker
+    ports:
+      - 8012:80
+    volumes:
+      - ../data:/code/data
+  searcher13:
+    image: searcher-worker
+    ports:
+      - 8013:80
+    volumes:
+      - ../data:/code/data
+  searcher14:
+    image: searcher-worker
+    ports:
+      - 8014:80
+    volumes:
+      - ../data:/code/data
+  searcher15:
+    image: searcher-worker
+    ports:
+      - 8015:80
+    volumes:
+      - ../data:/code/data
+  searcher16:
+    image: searcher-worker
+    ports:
+      - 8016:80
+    volumes:
+      - ../data:/code/data
+  searcher17:
+    image: searcher-worker
+    ports:
+      - 8017:80
+    volumes:
+      - ../data:/code/data
+  searcher18:
+    image: searcher-worker
+    ports:
+      - 8018:80
+    volumes:
+      - ../data:/code/data
+  searcher19:
+    image: searcher-worker
+    ports:
+      - 8019:80
+    volumes:
+      - ../data:/code/data
+  searcher20:
+    image: searcher-worker
+    ports:
+      - 8020:80
+    volumes:
+      - ../data:/code/data
+  searcher21:
+    image: searcher-worker
+    ports:
+      - 8021:80
+    volumes:
+      - ../data:/code/data
+  searcher22:
+    image: searcher-worker
+    ports:
+      - 8022:80
+    volumes:
+      - ../data:/code/data
+  searcher23:
+    image: searcher-worker
+    ports:
+      - 8023:80
+    volumes:
+      - ../data:/code/data
+  searcher24:
+    image: searcher-worker
+    ports:
+      - 8024:80
+    volumes:
+      - ../data:/code/data
+  searcher25:
+    image: searcher-worker
+    ports:
+      - 8025:80
+    volumes:
+      - ../data:/code/data
+  searcher26:
+    image: searcher-worker
+    ports:
+      - 8026:80
+    volumes:
+      - ../data:/code/data
+  searcher27:
+    image: searcher-worker
+    ports:
+      - 8027:80
+    volumes:
+      - ../data:/code/data
+  searcher28:
+    image: searcher-worker
+    ports:
+      - 8028:80
+    volumes:
+      - ../data:/code/data
+  searcher29:
+    image: searcher-worker
+    ports:
+      - 8029:80
+    volumes:
+      - ../data:/code/data
+  searcher30:
+    image: searcher-worker
+    ports:
+      - 8030:80
+    volumes:
+      - ../data:/code/data
+  searcher31:
+    image: searcher-worker
+    ports:
+      - 8031:80
+    volumes:
+      - ../data:/code/data

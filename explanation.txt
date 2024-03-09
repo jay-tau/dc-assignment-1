@@ -1,0 +1,6 @@
+As we increase the number of containers in the cluster, we initially see a reduction in the response time (both average and total).
+If we have n chunks, then each container only needs to search 1/n-th (worst-case) of number of lines in the original file, to get the result.
+
+Ideally, the decay should be exponential, i.e. if 1 chunk takes time t, then 2 chunks should take t/2, 4 should take t/4, and so on.
+However, that is not the case because, there is some fixed time cost associated with a request which does not reduce due to scaling.
+For example, sending the request to each worker container. At larger number of chunks, this becomes the major limiting factor, which is why the reduction is response time is not as prominent at higher chunk values.
