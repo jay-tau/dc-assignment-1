@@ -31,7 +31,7 @@ pandas-stubs==2.1.4.231227
 pathspec==0.12.1
 pillow==10.2.0
 platformdirs==4.2.0
-pre-commit==3.6.1
+pre-commit==3.6.2
 pydantic==2.6.1
 pydantic_core==2.16.2
 pyenchant==3.2.2
